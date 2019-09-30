@@ -70,7 +70,7 @@ def create_folder(directory):
 create_folder(DESTINATION_FOLDER)
 
 for root, dirs, files in os.walk(SOURCE_FOLDER, topdown=True):
-    if DESTINATION_FOLDER in root:
+    if DESTINATION_FOLDER == root:
         continue
 
     for file in files:
